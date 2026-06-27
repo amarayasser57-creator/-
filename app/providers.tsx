@@ -11,6 +11,7 @@ import {
   renderToStyleElements,
 } from '@fluentui/react-components'
 import { useServerInsertedHTML } from 'next/navigation'
+import { ChunkErrorRecovery } from '@/components/chunk-error-recovery'
 
 type ThemeMode = 'light' | 'dark'
 
@@ -44,6 +45,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
             theme={mode === 'light' ? webLightTheme : webDarkTheme}
             id="__fluent-root"
           >
+            <ChunkErrorRecovery />
             {children}
           </FluentProvider>
         </ThemeModeContext.Provider>
