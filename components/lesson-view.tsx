@@ -95,7 +95,9 @@ const useStyles = makeStyles({
     backgroundColor: tokens.colorNeutralBackground3,
     borderRadius: tokens.borderRadiusMedium,
     padding: tokens.spacingHorizontalL,
-    borderInlineStart: `${tokens.strokeWidthThicker} solid ${tokens.colorBrandStroke1}`,
+    borderInlineStartWidth: tokens.strokeWidthThicker,
+    borderInlineStartStyle: "solid",
+    borderInlineStartColor: tokens.colorBrandStroke1,
   },
   actions: {
     display: "flex",

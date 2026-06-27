@@ -37,7 +37,9 @@ const useStyles = makeStyles({
     flexDirection: "column",
     height: "100%",
     backgroundColor: tokens.colorNeutralBackground2,
-    borderInlineStart: `${tokens.strokeWidthThin} solid ${tokens.colorNeutralStroke2}`,
+    borderInlineStartWidth: tokens.strokeWidthThin,
+    borderInlineStartStyle: "solid",
+    borderInlineStartColor: tokens.colorNeutralStroke2,
     overflow: "hidden",
   },
   controls: {
